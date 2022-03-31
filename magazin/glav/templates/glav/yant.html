@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Янтарь</title>
+</head>
+<body>
+    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+       <span class="fs-4">Украшения из натурального камня</span>
+      </a>
+
+      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'glav' %}">Главная</a>
+        <a class="me-3 py-2 text-dark text-decoration-none" href="{% url 'kamni' %}">Каталог</a>
+      </nav>
+    </div>
+<h1>Украшения из янтаря</h1>
+<h2>Браслеты</h2>
+    <img src="{%static "yan_br.jpg"%}" height="300" width="300">
+    <img src="{%static "yan_bras.jpg"%}" height="300" width="300"><br>
+<h2>Бусы</h2>
+    <img src="{%static "yan_bus.jpg"%}" height="300" width="300">
+    <img src="{%static "yan_kol.jpg"%}" height="300" width="300"><br>
+<h2>Подвески</h2>
+    <img src="{%static "yan_p.jpg"%}" height="300" width="300">
+    <img src="{%static "yan_pod.jpg"%}" height="300" width="300"><br>
+
+</body>
+</html>
